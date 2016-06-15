@@ -1,0 +1,8 @@
+<h1><%= @image.title %></h1>
+<h3><%= @image.artist %></h3>
+<h3><%= @image.description %></h3>
+
+<%= image_tag @image.url %>
+<%= link_to "Back to imagezz", images_path %>
+<%= link_to "Edit meeee", edit_image_path(@image) %>
+<%= link_to "Discard this embarassing image", @image, method: :delete, data: {confirm: "U sure bro?"} %>
