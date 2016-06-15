@@ -1,0 +1,15 @@
+<%= form_for @blog do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :article %>
+    <%= f.text_field :article %>
+  </p>
+  <%= f.submit "Save meeeee!!!" %>
+<% end %>

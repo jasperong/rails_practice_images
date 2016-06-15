@@ -1,0 +1,7 @@
+<%= link_to "Go Home!!", blogs_url %>
+<h1><%= @blog.title %></h1>
+<h3><%= @blog.author %></h3>
+<p><%= @blog.article %></p>
+
+<%= link_to "Edit me!", edit_blog_url %>
+<%= link_to "DESTROOOOYYY!!!", @blog, method: :delete, data: {confirm: "u sure u wanna delete?"} %>

@@ -1,0 +1,13 @@
+<h1>Les Blog extraordinaire</h1>
+
+<%= link_to "New Blog postie", new_blog_url %>
+<ul>
+<% @blogs.each do |blog| %>
+  <li>
+    <%= link_to blog.title, "/blogs/#{blog.id}" %><br>
+    <%= blog.author %><br>
+    <%= blog.article %>
+  </li>
+<% end %>
+
+</ul>
