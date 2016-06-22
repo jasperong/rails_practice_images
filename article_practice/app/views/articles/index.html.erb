@@ -1,0 +1,10 @@
+<h1>Welcome to paradise!!</h1>
+<%= link_to "new post", new_article_url %>
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+    <%= link_to article.title, "/articles/#{article.id}" %><br>
+    <%= article.author %><br>
+    <%= article.body %></li>
+  <% end %>
+</ul>

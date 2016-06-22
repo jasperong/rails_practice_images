@@ -1,0 +1,19 @@
+<ul>
+
+<%= form_for @article do |f| %>
+  <li>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </li>
+  <li>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </li>
+  <li>
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+  </li>
+  <%= f.submit "save" %>
+<% end %>
+
+</ul>
